@@ -9,7 +9,7 @@ before_install:
 
 before_script:
   - npm install
-  - npm start > /dev/null
+  - npm start > /dev/null &
   - sleep 1
 
 script:
