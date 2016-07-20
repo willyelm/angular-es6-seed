@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '6.3.0'
+
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - npm install > /dev/null &
+  - npm run update-webdriver
+  - sleep 1
+
+script:
+  - npm test
+  - npm run protractor
