@@ -1,12 +1,6 @@
 import angular from 'angular'
 import ngRoute from 'angular-route'
-
-class View1Controller {
-  constructor () {}
-  get name () {
-    return this._name;
-  }
-}
+import {View1Controller} from './view1-controller'
 
 export default angular
   .module('myApp.view1', [
@@ -16,5 +10,5 @@ export default angular
     $routeProvider.when('/view1', {
       templateUrl: 'view1/view1.html',
       controller: View1Controller
-    });
+    })
   })

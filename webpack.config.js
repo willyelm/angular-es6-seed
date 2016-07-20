@@ -10,7 +10,8 @@ module.exports = {
   devtool: isProduction ? 'source-map' : 'eval',
   cache: true,
   entry: {
-    'app': path.join(sourcePath, 'app.js'),
+    'vendor': ['angular', 'angular-route', 'angular-mocks'],
+    'app': path.join(sourcePath, 'app.js')
   },
   output: {
     path: outputPath,
@@ -42,7 +43,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app'],
+      name: ['app', 'vendor'],
       minChunks: Infinity
     }),
     new CopyWebpackPlugin([{

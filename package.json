@@ -7,6 +7,7 @@
     "watch": "npm run build -- --watch",
     "server": "webpack-dev-server --port 3000",
     "start": "npm run server",
+    "test": "karma start karma.conf.js",
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",
     "protractor": "protractor e2e-tests/protractor.conf.js"
@@ -18,7 +19,9 @@
   "keywords": [
     "es6",
     "angular",
-    "seed"
+    "seed",
+    "protractor",
+    "karma"
   ],
   "author": "Williams Medina <williams.medinaa@gmail.com>",
   "license": "MIT",
@@ -30,12 +33,17 @@
     "parser": "babel-eslint"
   },
   "devDependencies": {
+    "angular-mocks": "^1.5.7",
     "babel-core": "^6.11.4",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "copy-webpack-plugin": "^3.0.1",
     "jasmine-core": "^2.4.1",
+    "karma": "^1.1.1",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-webpack": "^1.7.0",
     "protractor": "^4.0.0",
     "standard": "^7.1.2",
     "webpack": "^2.1.0-beta.19",
