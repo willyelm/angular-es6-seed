@@ -9,5 +9,5 @@ before_install:
 
 script:
   - npm install
-  - npm test
-  - npm run protractor
+  - npm test -- --browsers=Firefox --single-run
+  - npm run protractor -- --browser=firefox
