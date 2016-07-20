@@ -6,7 +6,10 @@
     "build": "NODE_ENV=production webpack --progress",
     "watch": "npm run build -- --watch",
     "server": "webpack-dev-server --port 3000",
-    "start": "npm run server"
+    "start": "npm run server",
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor e2e-tests/protractor.conf.js"
   },
   "repository": {
     "type": "git",
