@@ -1,7 +1,7 @@
 import angular from 'angular'
 
 class AppVersionDirective {
-  constructor(version) {
+  constructor (version) {
     this.restrict = 'E'
     this.scope = {}
     this.version = version
