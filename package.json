@@ -1,0 +1,45 @@
+{
+  "name": "angular-es6-seed",
+  "version": "0.0.1",
+  "description": "Seed project for angular apps using ES6",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --progress",
+    "watch": "npm run build -- --watch",
+    "server": "webpack-dev-server --port 3000",
+    "start": "npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willyelm/angular-es6-seed.git"
+  },
+  "keywords": [
+    "es6",
+    "angular",
+    "seed"
+  ],
+  "author": "Williams Medina <williams.medinaa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willyelm/angular-es6-seed/issues"
+  },
+  "homepage": "https://github.com/willyelm/angular-es6-seed#readme",
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "jasmine-core": "^2.4.1",
+    "protractor": "^4.0.0",
+    "standard": "^7.1.2",
+    "webpack": "^2.1.0-beta.19",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7"
+  }
+}
