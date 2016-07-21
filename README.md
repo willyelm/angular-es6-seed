@@ -1,8 +1,8 @@
 # angular-es6-seed
 
-[![Travis](https://img.shields.io/travis/willyelm/angular-es6-seed.svg?maxAge=2592000?style=flat-square)](https://travis-ci.org/willyelm/angular-es6-seed)
+[![Travis](https://img.shields.io/travis/willyelm/angular-es6-seed.svg?style=flat-square)](https://travis-ci.org/willyelm/angular-es6-seed)
 [![Standard](https://img.shields.io/badge/code%20style-standard-yellow.svg?style=flat-square)](http://standardjs.com/)
-[![license](https://img.shields.io/github/license/willyelm/angular-es6-seed.svg?maxAge=2592000?style=flat-square)](https://github.com/willyelm/angular-es6-seed)
+[![license](https://img.shields.io/github/license/willyelm/angular-es6-seed.svg?style=flat-square)](https://github.com/willyelm/angular-es6-seed)
 
 
 Seed project for angular apps using ES6 and webpack bundler.
